@@ -1,4 +1,5 @@
 ---
+istop: true
 layout: post
 title: "github当作私密的版本控制系统远端版本库私有化哈"
 date:  2017-03-07

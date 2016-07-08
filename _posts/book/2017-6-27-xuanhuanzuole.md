@@ -1,5 +1,5 @@
 ---
-istop: true
+
 layout: post
 book: true
 title:  "毛姆《寻欢作乐》（百读文库）liberxue一些所感所想和笔记书签"

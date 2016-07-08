@@ -1,5 +1,5 @@
 ---
-istop: true
+
 layout: post
 book: true
 category: book

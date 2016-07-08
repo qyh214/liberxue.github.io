@@ -1,5 +1,5 @@
 ---
-istop: true
+
 layout: post
 book: true
 title:  "瓦尔登湖liberxue一些所感所想和笔记书签"
