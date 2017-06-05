@@ -20,13 +20,13 @@ keywords: PhantomJs识别,PhantomJs,web,web爬虫,爬虫,PhantomJs爬虫
 
 - 普通的http请求:
  
-![普通的http请求](images/b8-p1.png)
+![普通的http请求](http://www.liberxue.com/images/b8-p1.png)
 
 再来看看同样情况下服务端收到的
 
 - ``PhantomJs``客户端发出的``http请求``:
 
-![PhantomJs客户端发出的http请求](images/b8-p2.png)
+![PhantomJs客户端发出的http请求](http://www.liberxue.com/images/b8-p2.png)
 
  
 ##### 仔细观察对比不难发现,PhantomJs具有如下特征:
@@ -54,13 +54,13 @@ keywords: PhantomJs识别,PhantomJs,web,web爬虫,爬虫,PhantomJs爬虫
 
 ##### js可以放在客户端脚本中对PhantomJs进行判断:
 
-![客户端脚本中对PhantomJs进行判断](images/b8-p3.png)
+![客户端脚本中对PhantomJs进行判断](http://www.liberxue.com/images/b8-p3.png)
 
 然而``PhantomJs``如果一定要在``plugin``方面模仿一个正常的浏览器也不是不可能,因为Qt框架也是提供了一套``native Api``来实现``plugin``的, 真要做的话也只是一个开发成本的问题.
 
 另外的一个可以作为判断客户端的思路是利用alert弹窗的用户响应时间进行判断,来看看下面这段代码:
 
-![alert弹窗的用户响应时间进行判断](images/b8-p3.png)
+![alert弹窗的用户响应时间进行判断](http://www.liberxue.com/images/b8-p3.png)
  
 另外,``PhantomJs``客户端中有两个全局变量,``window.callPhantom``和``window._phantom``,但有消息表明这两个值在未来很可能会发生改变.
  
