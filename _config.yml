@@ -40,7 +40,7 @@ paginate_path: "page/:num/"
 
 # Comment
 comment:
-    disqus: GcsSloop
+    disqus: liberxue
     # duoshuo:
 # Social
 social:
