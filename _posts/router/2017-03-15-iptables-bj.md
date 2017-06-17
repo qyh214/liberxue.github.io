@@ -30,8 +30,8 @@ iptables -L
  -n：以数字的方式显示ip，它会将ip直接显示出来，如果不加-n，则会将ip反向解析成主机名。
  -v：显示详细信息
 一个规则列表例子
-{% highlight css %}
-`[root@sstest ~]# iptables -L
+{% highlight shell %}
+[root@sstest ~]# iptables -L
 Chain INPUT (policy ACCEPT)
 target     prot opt source               destination         
 ACCEPT     tcp  --  anywhere             anywhere            tcp dpt:http 
@@ -55,9 +55,9 @@ target     prot opt source
 2、iptables有两种策略，一种叫“通”策略，一种叫“堵”策略，通策略，默认门是关着的，必须要定义谁能进。堵策略则是，大门是洞开的，但是你必须有身份认证，否则不能进。上面例子中(policy ACCEPT)即表示策略默认全部可以通过，同理相反的还有DROP。
 
 **修改策略命令是**
-
-`iptables -P chain (DROP|ACCEPT)
-`
+```
+iptables -P chain (DROP|ACCEPT)
+```
  3、规则的次序非常关键，谁的规则越严格，应该放的越靠前，而检查规则的时候，是按照从上往下的方式进行检查的。所以一定要注意添加顺序问题。基本上规则无效多半是因为这种情况。
 
 **五、怎么添加删除iptables规则 ** 
@@ -83,11 +83,12 @@ target     prot opt source
 `
 流出一般在OUTPUT和POSTROUTING上
  其中，协议匹配（-p）有一些隐含参数
-`
-`-p tcp :
+```
+-p tcp :
 
 --dport XX-XX：指定目标端口,不能指定多个非连续端口,只能指定单个端口
-`--sport：指定源端口
+```
+--sport：指定源端口
 --tcp-fiags：TCP的标志位（SYN,ACK，FIN,PSH，RST,URG）
 
 -p udp：
@@ -96,12 +97,13 @@ target     prot opt source
 
 -p icmp：
 --icmp-type：
-echo-request(请求回显)，一般用8 来表示`
-
+echo-request(请求回显)，一般用8 来表示
+```
 
 所以 --icmp-type 8 匹配请求回显数据包
-`echo-reply （响应的数据包）一般用0来表示
-`
+```
+echo-reply （响应的数据包）一般用0来表示
+```
  
 
  匹配标准有了，最后就是执行动作了（ACTION）
