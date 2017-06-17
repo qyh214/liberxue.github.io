@@ -37,7 +37,6 @@ fsck -f 命令并按回车键Enter
 ```
 reboot //按Enter重启到苹果系统
 ```
-，
 
 >第一次执行fsck -f后，没有修复成功，第二次，同样操作，执行/sbin/fsck -f终于显示修复成功。
 
