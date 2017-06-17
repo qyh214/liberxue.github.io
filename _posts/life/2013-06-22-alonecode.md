@@ -1,15 +1,12 @@
 ---
 layout: post
-title: "我是一个码农 我是一个有社交障碍的人"
-date: 2013-06-22
-ascription: study
-excerpt: "摘要: 天气很热，城市很冷，心无知觉-----曾经自以为是的幸福和感情。在冷漠的流年中与其说无足轻重还不如说荡然无存——《心是孤独的猎手》"
-tag: 
-- alone
-- 心情
-feature: /upload-img/bj/013.jpg
-comments: true
+category: life
+title: 我是一个码农 我是一个有社交障碍的人
+tags: alone, 心情,面壁者
+keywords: alone, 心情,面壁者
+excerpt: 摘要: 天气很热，城市很冷，心无知觉-----曾经自以为是的幸福和感情。在冷漠的流年中与其说无足轻重还不如说荡然无存——《心是孤独的猎手》。
 ---
+
 - 你是你，请不要站在别人角度去想！ 
 - 
 - 你是你，请不要说如果我是你该怎么做！
