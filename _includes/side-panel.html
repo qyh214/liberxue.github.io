@@ -29,20 +29,20 @@
                   
                 {% endfor %}
               </ul>
-            </nav>
-          </div>
-                <div id="action" class="hiding-canvas">
+            <div id="action" class="hiding-canvas">
     <canvas id="particles" style="position:absolute;top:0px;left:0px;z-index:0.1;"></canvas>
 </div>
+            </nav>
+          </div>
           <div>{% include social.html %}</div>
         </div>
       </div>
     </div>
     
     {% if site.cover_color %}
-    <div class="panel-cover--overlay cover-{{site.cover_color}}"></div>
+    <div class="panel-cover--overlay cover-{{site.cover_color}}" style="z-index:999;"></div>
     {% else %}
-    <div class="panel-cover--overlay cover-disabled"></div>
+    <div class="panel-cover--overlay cover-disabled" style="z-index:999;"></div>
     {% endif %}
   </div>
 </header>
