@@ -288,6 +288,7 @@ table thead tbody {
 }
 
 .content-wrapper {
+  z-index: 99999;
   width: 87%;
   margin-left: 20%;
 }
@@ -295,7 +296,6 @@ table thead tbody {
   .content-wrapper__inner {
     margin: 0 10%;
     padding: 50px 0;
-    z-index: 999;
   }
 
 .footer {
