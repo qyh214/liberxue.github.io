@@ -157,6 +157,8 @@
     }
 
     .content-wrapper {
+      position:relative;
+      z-index: 2000;
       width: 80%;
       max-width: none;
       margin: 0 auto;
