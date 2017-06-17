@@ -282,13 +282,13 @@ table thead tbody {
 
 .container {
   position: relative;
-  z-index: 500;
+  z-index: 999;
   width: $total-width - $gutter-width;
   margin: 0 auto;
 }
 
 .content-wrapper {
-  z-index: 99999;
+  z-index: 999;
   width: 87%;
   margin-left: 20%;
 }
