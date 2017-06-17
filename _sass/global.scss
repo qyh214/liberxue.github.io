@@ -304,6 +304,8 @@ position:relative;
   font-size: .7em;
   color: lighten($gray-dark, 10%);
   text-align: center;
+  position: relative;
+  z-index:1;
 }
 
   .footer__copyright {
