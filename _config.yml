@@ -19,13 +19,13 @@ redcarpet:
 cover_color: slate
 
 blog_button:
-    title: 博客
+    title: 博
     description: 访问博客
-
 nav:
-    - {title: GitHub,     in_site: false,  description: Liberxue's GitHub,    url: 'https://github.com/liberxue'}
-    - {title: 目录,        in_site: true,  description: 博客目录,               url: '/timeline'}
-    - {title: 关于,        in_site: true,  description: 关于作者 liberxue,       url: '/info/about'}
+    - {title:  书,     in_site: false,  description: liberxue 去过的地方,    url: '/liberxuebook/bookindex'}
+     - {title: 景,     in_site: true,  description: liberxue 去过的地方,    url: '/liberxueroad/roadindex'}
+    - {title:  目,        in_site: true,  description: 博客目录,               url: '/timeline'}
+    - {title:  我,        in_site: true,  description: 关于我 liberxue,       url: '/info/about'}
     
 
 
