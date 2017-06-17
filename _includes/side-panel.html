@@ -1,5 +1,4 @@
 <header class="panel-cover {% if page.layout == 'post' or page.layout == 'page' %}panel-cover--collapsed{% endif %}" style="background-image: url('/assets/siteinfo/background-cover.jpg')">
-     <canvas id="particles" style="position:absolute;top:0px;left:0px;z-index:-1;"></canvas>
   <div class="panel-main">
     <div class="panel-main__inner panel-inverted">
     <div class="panel-main__content" style="z-index:999;">
@@ -19,7 +18,7 @@
         <div class="navigation-wrapper" >
           <div>
             <nav class="cover-navigation cover-navigation--primary" id="js-actions">
-              <ul class="navigation"  id="action" class="hiding-canvas" style="z-index:999;">
+              <ul class="navigation" style="z-index:999;">
                 <li class="navigation__item"><a href="/#blog" title="{{site.blog_button.description}}" class="blog-button">{{site.blog_button.title}}</a></li>
                 {% for item in site.nav %}
                   {% if item.in_site %}
@@ -32,6 +31,9 @@
               </ul>
             </nav>
           </div>
+                <div id="action" class="hiding-canvas">
+    <canvas id="particles" style="position:absolute;top:0px;left:0px;z-index:0.1;"></canvas>
+</div>
           <div>{% include social.html %}</div>
         </div>
       </div>
