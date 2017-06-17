@@ -2,9 +2,9 @@
 layout: default
 ---
 
-<div class="main-post-list hidden">
+<div class="main-post-list hidden" style="z-index:999;">
 
-  <ol class="post-list">
+  <ol class="post-list" style="z-index:999;">
     <!--置顶-->
     {% for post in site.posts %}
       {% if post.istop %}
