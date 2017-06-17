@@ -17,8 +17,11 @@
         
         <div class="navigation-wrapper" >
           <div>
-            <nav class="cover-navigation cover-navigation--primary" id="js-actions">
-              <ul class="navigation">
+            <nav class="cover-navigation cover-navigation--primary" id="js-actions" style="z-index:999;">
+  <canvas id="particles" style="position:absolute;top:0px;left:0px;z-index:1;"></canvas>
+<div id="action" class="hiding-canvas">
+</div>
+              <ul class="navigation" style="z-index:999;">
                 <li class="navigation__item"><a href="/#blog" title="{{site.blog_button.description}}" class="blog-button">{{site.blog_button.title}}</a></li>
                 {% for item in site.nav %}
                   {% if item.in_site %}
@@ -30,9 +33,6 @@
                 {% endfor %}
               </ul>
             </nav>
-              <canvas id="particles" style="position:absolute;top:0px;left:0px;z-index:1;"></canvas>
-        <div id="action" class="hiding-canvas">
-        </div>
           </div>
           
           <div>{% include social.html %}</div>
