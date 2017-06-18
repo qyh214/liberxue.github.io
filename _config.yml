@@ -23,7 +23,7 @@ blog_button:
     description: 访问博客
 
 nav:
-    - {title: 书籍,     in_site: true,  description: liberxue 书,    url: '/book/bookIndex'}
+    - {title: 书籍,     in_site: true,  description: liberxue 书,    url: '/book/bookindex'}
     - {title: 目录,        in_site: true,  description: 博客目录,               url: '/timeline'}
     - {title: 关于,        in_site: true,  description: 关于作者 liberxue,       url: '/info/about'}
     
