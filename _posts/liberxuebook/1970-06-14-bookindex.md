@@ -1,16 +1,18 @@
 ---
 istop: true
 layout: post
-category: CustomView
-title: 安卓自定义View教程目录
-tags: 自定义View, 教程, 目录
-keywords: CustomView, Android, 安卓, 自定义View详解, 自定义控件, Canvas, Path, 贝塞尔曲线, PathMeasure, Matrix, 教程
-excerpt: 自定义View目录，包括自定义坐标系，角度弧度，颜色，自定义view流程，Canvas，Path，PathMeasure，贝塞尔曲线，Matrix，2D绘图等相关内容。
+category: liberxuebook
+title: liberxue读过书在读的书
+tags: 书籍, book, linberxue,目录
+keywords: 。
+excerpt: 何其有幸。仅需短短几小时，至多几十个小时就能读完一本作家的心血结晶。感受他们的或磅礴思想、或悲欢离合，从文字中汲取养分与力量,感受他们的或磅礴思想、或悲欢离合，从文字中汲取养分与力量。
 redirect_from:
   - /1970/06/bookindex/
 ---
 
-Here are some examples of what a post with images might look like. If you want to display two or three images next to each other responsively use `figure` with the appropriate `class`. Each instance of `figure` is auto-numbered and displayed in the caption.
+科普是现实和功利主义的，科幻是感性和理想主义的，科普是知识的灌输，而科幻则是心灵的启迪。
+从本质上说，金戒指和钻石戒指没有什么不同，都是出于炫耀意义的产物，所以他们怎么能衬托出谁比谁更高贵呢？真正的高贵可能是什么也不戴，却比那些戴满饰品的人更光彩夺目。
+人间的贵有三种，一种是一眼就能看出的贵，这通常是因为其吃穿用度写满了昂贵的标签，这是富贵；一种是第一眼看不出贵，但过后就能感受出来的身份地位、教养学识，这是权贵；还有一种是看多少眼都还是那样耀眼，只因为其迷人的气质和思想，这是高贵.
 
 ### Figures (for images or video)
 
