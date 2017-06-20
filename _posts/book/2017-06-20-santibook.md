@@ -2,7 +2,7 @@
 istop: true
 layout: post
 title:  "看完三体，三体Ⅱ·黑暗森林，三体Ⅲ·死神永生全集一些所感所想"
-date:   2017-06-13
+date:   2017-06-20
 category: book
 excerpt: "三体看完了，有些意犹未尽一些笔记和所感所想"
 keywords: 三体,黑暗森林,死神,刘慈欣, 面壁者,智子
