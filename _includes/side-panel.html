@@ -19,12 +19,12 @@
           <div>
             <nav class="cover-navigation cover-navigation--primary">
               <ul class="navigation">
-                <li class="navigation__item"><a href="/#blog" title="{{site.blog_button.description}}" class="blog-button" </a></li>
+                <li class="navigation__item"><a href="/#blog" title="{{site.blog_button.description}}" class="blog-button">{{site.blog_button.description}}</a></li>
                 {% for item in site.nav %}
                   {% if item.in_site %}
-                    <li class="navigation__item"><a href="{{item.url}}" title="{{item.description}}" ></a></li>
+                    <li class="navigation__item"><a href="{{item.url}}" title="{{item.description}}" >{{item.description}}</a></li>
                   {% else %}
-                    <li class="navigation__item"><a href="{{item.url}}" target="_blank" title="{{item.description}}"</a></li>
+                    <li class="navigation__item"><a href="{{item.url}}" target="_blank" title="{{item.description}}">{{item.description}}</a></li>
                   {% endif %}
                   
                 {% endfor %}
