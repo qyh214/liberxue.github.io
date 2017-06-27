@@ -28,12 +28,15 @@
     margin-bottom: .2em;
     font-size: 1.5em;
     line-height: 1.3em;
-  a {
-	color:$brand-color;
+}
+/* Effect 16: fall down */
+  .post-list__post-title a {
+	color: #6f8686;
 	text-shadow: 0 0 1px rgba(111,134,134,0.3);
-    }
-a::before {
-	color: $text-color;
+}
+
+  .post-list__post-title a::before {
+	color: #000;
 	content: attr(data-hover);
 	position: absolute;
 	opacity: 0;
@@ -45,15 +48,16 @@ a::before {
 	-moz-transition: -moz-transform 0.3s, opacity 0.3s;
 	transition: transform 0.3s, opacity 0.3s;
 	pointer-events: none;
-  }
-a:hover::before,
-a:focus::before {
+}
+
+  .post-list__post-title a:hover::before,
+  .post-list__post-title a:focus::before {
 	-webkit-transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
 	-moz-transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
 	transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
 	opacity: 1;
-      }
 }
+
 
   .post-list__meta {
     display: block;
