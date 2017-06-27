@@ -57,6 +57,28 @@ body {
 	transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
 	opacity: 1;
         }
+.circle {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    width: 13px;
+    height: 6px;
+    line-height: 0;
+    font-size: 0;
+    background: url(https://p.ssl.qhimg.com/t017cc5b2c4f8eb01f0.webp) no-repeat 0 0;
+    vertical-align: middle;
+}
+.arrowl{
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    width: 13px;
+    height: 6px;
+    line-height: 0;
+    font-size: 0;
+    background: url(https://p.ssl.qhimg.com/t017cc5b2c4f8eb01f0.webp) no-repeat 0 0;
+    vertical-align: middle;
+}
 
 h1,
 h2,
