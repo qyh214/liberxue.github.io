@@ -28,20 +28,10 @@
     margin-bottom: .2em;
     font-size: 1.5em;
     line-height: 1.3em;
-
-    // a {
-    //   color: $gray-darkest;
-
-    //   &:hover {
-    //     color: $hover-color;
-    //   }
-
-    // }
-    
-  a {
+a {
 	color: $gray-darkest;
 	text-shadow: 0 0 1px rgba(111,134,134,0.3);
-}
+  }
 
 a::before {
 	color: $text-color;
@@ -56,7 +46,7 @@ a::before {
 	-moz-transition: -moz-transform 0.3s, opacity 0.3s;
 	transition: transform 0.3s, opacity 0.3s;
 	pointer-events: none;
-}
+ }
 
 a:hover::before,
 a:focus::before {
@@ -65,7 +55,7 @@ a:focus::before {
 	transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
 	opacity: 1;
 }
-  }
+}
 
   .post-list__meta {
     display: block;
