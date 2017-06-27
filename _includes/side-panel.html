@@ -3,7 +3,7 @@
   <div id="action" class="panel-main">
     <div class="panel-main__inner panel-inverted">
     <div class="panel-main__content">
-        <a href="/" title="前往 {{ site.title }} 的主页" class="blog-button"><img src="/assets/siteinfo/avatar.jpg" width="80" alt="{{ site.title }} logo" class="panel-cover__logo logo" /></a>
+        <a href="/" data-hover="{{site.title}}" title="前往 {{ site.title }} 的主页" class="blog-button"><img src="/assets/siteinfo/avatar.jpg" width="80" alt="{{ site.title }} logo" class="panel-cover__logo logo" /></a>
         <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage for {{ site.title }}" class="blog-button">{{ site.title }}</a></h1>
         {% if site.subtitle %}
         <span class="panel-cover__subtitle panel-subtitle">{{site.subtitle}}</span>
@@ -19,12 +19,12 @@
           <div>
             <nav class="cover-navigation cover-navigation--primary">
               <ul class="navigation">
-                <li class="navigation__item"><a href="/#blog" title="{{site.blog_button.description}}" class="blog-button">{{site.blog_button.title}}</a></li>
+                <li class=""><a href="/#blog" data-hover="{{site.blog_button.description}}" title="{{site.blog_button.description}}" class="blog-button">{{site.blog_button.title}}</a></li>
                 {% for item in site.nav %}
                   {% if item.in_site %}
-                    <li class="navigation__item"><a href="{{item.url}}" title="{{item.description}}">{{item.title}}</a></li>
+                    <li class="navigation__item"><a href="{{item.url}}" data-hover="{{item.description}}" title="{{item.description}}">{{item.title}}</a></li>
                   {% else %}
-                    <li class="navigation__item"><a href="{{item.url}}" target="_blank" title="{{item.description}}">{{item.title}}</a></li>
+                    <li class="navigation__item"><a href="{{item.url}}" data-hover="{{item.description}}"  target="_blank" title="{{item.description}}">{{item.title}}</a></li>
                   {% endif %}
                   
                 {% endfor %}
