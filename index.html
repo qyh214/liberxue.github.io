@@ -11,7 +11,7 @@ layout: default
           <h2 class="post-list__post-title post-title"><a href="{{ post.url }}"  data-hover="[置顶]{{ post.title }}" title="访问 {{ post.title }}">[置顶]{{ post.title }}</a></h2>
           <p class="excerpt">{{ post.content | strip_html | strip_newlines | truncate: 260 }}&hellip;</p>
           <span class="post-list__meta"><a href="{{ post.url }}"  data-hover=" {{ post.keywords }}" title="访问 {{ post.keywords }}">关键字：{{ post.keywords }}</a></span>
-          <div class="post-list__meta"><time datetime="{{post.date | date: date_to_xmlschema}}" class="post-list__meta--date date">{{ post.date | date: "%F"}}</time> &#8226; <span class="post-list__meta--tags tags">{{ post.category }}</span> <a class="btn-border-small" href={{ post.url }}></a></div>
+          <div class="post-list__meta"><time datetime="{{post.date | date: date_to_xmlschema}}" class="post-list__meta--date date">{{ post.date | date: "%F"}}</time> &#8226; <span class="post-list__meta--tags tags">{{ post.category }}</span> <a class="btn-border-small" data-hover=" {{ post.title }}" href={{ post.url }}>继续阅读</a></div>
           <hr class="post-list__divider" />
         </li>
         {% endif %}
