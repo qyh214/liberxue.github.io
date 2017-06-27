@@ -32,11 +32,12 @@ body {
 
  a {
 	color: #6f8686;
+  text-decoration: none;
 	text-shadow: 0 0 1px rgba(111,134,134,0.3);
     }
 
   a::before {
-	color: #435a6b;
+	color: #000;
 	content: attr(data-hover);
 	position: absolute;
 	opacity: 0;
