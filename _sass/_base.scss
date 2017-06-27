@@ -6,6 +6,7 @@ p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
     margin: 0;
     padding: 0;
+    overflow-y:visible;
 }
 
 
@@ -127,12 +128,12 @@ h1, h2, h3, h4, h5, h6 {
 // 	opacity: 1;
 //     }
 // }
-   a {
+   * a {
 	color: #6f8686;
 	text-shadow: 0 0 1px rgba(111,134,134,0.3);
     }
 
- a::before {
+ * a::before {
 	color: #435a6b;
 	content: attr(data-hover);
 	position: absolute;
@@ -147,8 +148,8 @@ h1, h2, h3, h4, h5, h6 {
 	pointer-events: none;
 }
 
-        a:hover::before,
-        a:focus::before {
+        * a:hover::before,
+        * a:focus::before {
 	-webkit-transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
 	-moz-transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
 	transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
