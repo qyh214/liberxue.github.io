@@ -28,12 +28,13 @@
     margin-bottom: .2em;
     font-size: 1.5em;
     line-height: 1.3em;
-a {
+}
+ .post-list__post-title a {
 	color: $gray-darkest;
 	text-shadow: 0 0 1px rgba(111,134,134,0.3);
   }
 
-a::before {
+ .post-list__post-title a::before {
 	color: $text-color;
 	content: attr(data-hover);
 	position: absolute;
@@ -48,13 +49,12 @@ a::before {
 	pointer-events: none;
  }
 
-a:hover::before,
-a:focus::before {
+ .post-list__post-title a:hover::before,
+ .post-list__post-title a:focus::before {
 	-webkit-transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
 	-moz-transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
 	transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
 	opacity: 1;
-}
 }
 
   .post-list__meta {
