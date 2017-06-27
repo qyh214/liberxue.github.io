@@ -38,7 +38,7 @@ excerpt: 博客时间线
     {% for post in site.posts %}
       {% if post.istop %}
         <li>
-          <h1 class="time-line-title"><a href="{{ post.url }}" title="访问 {{ post.title }}">[置顶]{{ post.title }}</a></h1>
+          <h1 class="time-line-title"><a href="{{ post.url }}" data-hover="[置顶]{{ post.title }}" title="访问 {{ post.title }}">[置顶]{{ post.title }}</a></h1>
           <div class="time-line-mate"><time datetime="{{post.date | date: date_to_xmlschema}}" class="post-list__meta--date date">{{ post.date | date: "%F"}}</time> &#8226; <span class="post-list__meta--tags tags">{{ post.category }}</span> </div>
         </li>
       {% endif %}
@@ -48,7 +48,7 @@ excerpt: 博客时间线
       {% if post.istop %}
       {% else %}
         <li>
-          <h1 class="time-line-title"><a href="{{ post.url }}" title="访问 {{ post.title }}">{{ post.title }}</a></h1>
+          <h1 class="time-line-title"><a href="{{ post.url }}" data-hover="{{ post.title }}" title="访问 {{ post.title }}">{{ post.title }}</a></h1>
           <div class="time-line-mate"><time datetime="{{post.date | date: date_to_xmlschema}}" class="post-list__meta--date date">{{ post.date | date: "%F"}}</time> &#8226; <span class="post-list__meta--tags tags">{{ post.category }}</span></div>
         </li>
       {% endif %}
@@ -66,7 +66,7 @@ excerpt: 博客时间线
       <ul>
     {% endif %}
 
-        <li class="entry-title"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+        <li class="entry-title"><a href="{{ site.url }}{{ post.url }}" data-hover="{{ post.title }}" title="{{ post.title }}">{{ post.title }}</a></li>
 
     {% if forloop.last %}
       </ul>
