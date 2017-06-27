@@ -28,13 +28,11 @@
     margin-bottom: .2em;
     font-size: 1.5em;
     line-height: 1.3em;
-}
- .post-list__post-title a {
-	color: $gray-darkest;
+  a {
+	color:$brand-color;
 	text-shadow: 0 0 1px rgba(111,134,134,0.3);
-  }
-
- .post-list__post-title a::before {
+    }
+a::before {
 	color: $text-color;
 	content: attr(data-hover);
 	position: absolute;
@@ -47,14 +45,14 @@
 	-moz-transition: -moz-transform 0.3s, opacity 0.3s;
 	transition: transform 0.3s, opacity 0.3s;
 	pointer-events: none;
- }
-
- .post-list__post-title a:hover::before,
- .post-list__post-title a:focus::before {
+  }
+a:hover::before,
+a:focus::before {
 	-webkit-transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
 	-moz-transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
 	transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
 	opacity: 1;
+      }
 }
 
   .post-list__meta {
