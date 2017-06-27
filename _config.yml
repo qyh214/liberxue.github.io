@@ -1,8 +1,8 @@
 # Basic
 title: Liberxue
-subtitle: Full Stack | 独立开发者 
+subtitle: Full Stack●独立开发者 
 welcome_message: 欢迎来到 Liberxue「角落」侃侃理想、谈谈人生、敲敲代码。
-description: 热爱生活&喜欢读书,擅长烹饪&研究新奇硬件&网路安全|bsd路由器开发
+description: 致力于网络安全渗透分析及bsd路由器开发
 creator: <a href="http://www.liberxue.com">@liberxue</a>
 
 url: "http://www.liberxue.com"
@@ -23,9 +23,9 @@ blog_button:
     description: 访问博客
 
 nav:
-    - {title: 看过的书,     in_site: true,  description: liberxue 书,    url: '/book/bookindex'}
     - {title: 目录,        in_site: true,  description: 博客目录,               url: '/timeline'}
     - {title: 关于,        in_site: true,  description: 关于作者 liberxue,       url: '/info/about'}
+    - {title: 看过的书,     in_site: true,  description: liberxue 书,    url: '/book/bookindex'}
     - {title: 走过的路,        in_site: true,  description: 关于作者 liberxue,       url: '/info/about'}
     
 
