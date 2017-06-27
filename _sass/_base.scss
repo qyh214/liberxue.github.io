@@ -104,8 +104,8 @@ a {
         color: $text-color;
         text-decoration: underline;
     }
-    &:before{
-    color: #06cef5;
+    &::before{
+    color:$text-color;
     content: attr(data-hover);
     position: absolute;
     opacity: 0;
