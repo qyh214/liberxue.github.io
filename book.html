@@ -8,11 +8,20 @@ keywords: liberxue, liberxueblog,
 excerpt: 博客时间线
 ---
 
-<h4>Category</h4>
-<ul>
-    {% for category in site.categories %}
-    <li><a href="/categories/{{ category | first }}/" title="view all
-posts">{{ category | first }} {{ category | last | size }}</a>
-    </li>
-    {% endfor %}
-</ul>
+
+
+
+               {% for post in site.posts %} 
+                        {% if post.category.book %}
+                    <ul>
+                        <li class="wow fadeInLeft" data-wow-duration="1.5s">
+                            <a class="zoombtn" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+                            <p>{{ post.date}}</p>
+                            <p>{{ post.excerpt }}</p>
+                            <a href="{{ site.url }}{{ post.url }}" class="btn zoombtn">查看全文</a>
+                             <hr class="hr-line">
+                            <a href="#{{ this_word }}" class="tag"><span class="term">{{ page.tags }}</span> <span class="count">{{ post.tags[this_word].size }}</span></a>
+                        </li>
+                    </ul>
+                      {% endif %}
+                    {% endfor %}
