@@ -1,6 +1,6 @@
 ---
 layout: post
-category: book
+category: Info
 title: book
 date: 1970-01-01 00:00:00.000000000 +00:00
 tags: liberxue, info
@@ -11,8 +11,9 @@ excerpt: 博客时间线
 
 
 
-{% for post in site.posts%} 
- {% if posts.category.book %}
+{% for post in site.posts %} 
+ {% if post.category = book %}
+  {% else %}
  <ul>
  <li class="wow fadeInLeft" data-wow-duration="1.5s">
 <a class="zoombtn" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
