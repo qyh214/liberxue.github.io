@@ -9,7 +9,95 @@ excerpt: liberxue看过的书|最近在看的书|已读过的书|想看的书
 ---
 
 
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" id="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/layout.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.min.js"></script>	
+	<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+	<script type="text/javascript">
+	$(function () {
+		var filterList = {
+			init: function () {
+			
+				// MixItUp plugin
+				$('#portfoliolist').mixitup({
+					targetSelector: '.portfolio',
+					filterSelector: '.filter',
+					effects: ['fade'],
+					easing: 'snap',
+					// call the hover effect
+					onMixEnd: filterList.hoverEffect()
+				});				
+			},
+			hoverEffect: function () {
+			
+				// Simple parallax effect
+				$('#portfoliolist .portfolio').hover(
+					function () {
+						$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+						$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+					},
+					function () {
+						$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+						$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+					}		
+				);				
+			
+			}
 
+		};
+		
+		 //Run the show!
+		filterList.init();
+		
+		
+	});	
+	</script>
+</head>
+<body>
+	<p>在线选座系统</p>
+	<p>绿色💺 空闲|灰色💺占用</p>
+	<div class="container">
+		<div id="portfoliolist">
+			<div class="portfolio">
+				<div class="portfolio-wrapper">				
+					<li class="text<?php echo $v['status'];?>"><?php echo $v['title'];?><br><?php echo $v['kws'];?>人<?php if($v['status']==1): ?><a title="点击" href="desk_edit.php?action=editStatus&id=<?php echo $v['id'];?>&key=1"></a><?php else:?><a title="" href="desk_edit.php?adminid=<?php echo intval($_GET['adminid']);?>&shopid=<?php echo $_GET['shopid'];?>&action=editStatus&id=<?php echo $v['id'];?>&key=1&osctitle=<?php echo $v['title'];?>"><img src="../../img/active.png"></a><?php endif?></li>
+				</div>
+			</div>	
+						<div class="portfolio">
+				<div class="portfolio-wrapper">				
+					<li class="text<?php echo $v['status'];?>"><?php echo $v['title'];?><br><?php echo $v['kws'];?>人<?php if($v['status']==1): ?><a title="点击" href="desk_edit.php?action=editStatus&id=<?php echo $v['id'];?>&key=1"></a><?php else:?><a title="" href="desk_edit.php?adminid=<?php echo intval($_GET['adminid']);?>&shopid=<?php echo $_GET['shopid'];?>&action=editStatus&id=<?php echo $v['id'];?>&key=1&osctitle=<?php echo $v['title'];?>"><img src="../../img/active.png"></a><?php endif?></li>
+				</div>
+			</div>	
+						<div class="portfolio">
+				<div class="portfolio-wrapper">				
+					<li class="text<?php echo $v['status'];?>"><?php echo $v['title'];?><br><?php echo $v['kws'];?>人<?php if($v['status']==1): ?><a title="点击" href="desk_edit.php?action=editStatus&id=<?php echo $v['id'];?>&key=1"></a><?php else:?><a title="" href="desk_edit.php?adminid=<?php echo intval($_GET['adminid']);?>&shopid=<?php echo $_GET['shopid'];?>&action=editStatus&id=<?php echo $v['id'];?>&key=1&osctitle=<?php echo $v['title'];?>"><img src="../../img/active.png"></a><?php endif?></li>
+				</div>
+			</div>	
+						<div class="portfolio">
+				<div class="portfolio-wrapper">				
+					<li class="text<?php echo $v['status'];?>"><?php echo $v['title'];?><br><?php echo $v['kws'];?>人<?php if($v['status']==1): ?><a title="点击" href="desk_edit.php?action=editStatus&id=<?php echo $v['id'];?>&key=1"></a><?php else:?><a title="" href="desk_edit.php?adminid=<?php echo intval($_GET['adminid']);?>&shopid=<?php echo $_GET['shopid'];?>&action=editStatus&id=<?php echo $v['id'];?>&key=1&osctitle=<?php echo $v['title'];?>"><img src="../../img/active.png"></a><?php endif?></li>
+				</div>
+			</div>	
+						<div class="portfolio">
+				<div class="portfolio-wrapper">				
+					<li class="text<?php echo $v['status'];?>"><?php echo $v['title'];?><br><?php echo $v['kws'];?>人<?php if($v['status']==1): ?><a title="点击" href="desk_edit.php?action=editStatus&id=<?php echo $v['id'];?>&key=1"></a><?php else:?><a title="" href="desk_edit.php?adminid=<?php echo intval($_GET['adminid']);?>&shopid=<?php echo $_GET['shopid'];?>&action=editStatus&id=<?php echo $v['id'];?>&key=1&osctitle=<?php echo $v['title'];?>"><img src="../../img/active.png"></a><?php endif?></li>
+				</div>
+			</div>	
+						<div class="portfolio">
+				<div class="portfolio-wrapper">				
+					<li class="text<?php echo $v['status'];?>"><?php echo $v['title'];?><br><?php echo $v['kws'];?>人<?php if($v['status']==1): ?><a title="点击" href="desk_edit.php?action=editStatus&id=<?php echo $v['id'];?>&key=1"></a><?php else:?><a title="" href="desk_edit.php?adminid=<?php echo intval($_GET['adminid']);?>&shopid=<?php echo $_GET['shopid'];?>&action=editStatus&id=<?php echo $v['id'];?>&key=1&osctitle=<?php echo $v['title'];?>"><img src="../../img/active.png"></a><?php endif?></li>
+				</div>
+			</div>	
+																			
+		</div>
+	</div>
+</body>
+</html>
 
 {% for post in site.posts%} 
  {% if post.book%}
