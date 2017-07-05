@@ -10,7 +10,7 @@ excerpt: 博客时间线
 
 {% for category in site.categories %}
     <li>{{category.book]}}({{category | last | size}})</li>
-        {% for post in category.book%}
+        {% if post in category.book%}
         <p><a href="{{post.url}}">{{post.title}}</a></p>
-        {% endfor %}
-    {% endfor %}
+        {% endif %}
+    {% endif %}
