@@ -12,7 +12,7 @@ excerpt: 博客时间线
 
 
 {% for post in site.posts%} 
- {% if post.category = book %}
+ {% for post.category = book %}
  <ul>
  <li class="wow fadeInLeft" data-wow-duration="1.5s">
 <a class="zoombtn" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
@@ -23,5 +23,5 @@ excerpt: 博客时间线
 <a href="#{{ this_word }}" class="tag"><span class="term">{{ page.tags }}</span> <span class="count">{{ post.tags[this_word].size }}</span></a>
 </li>
 </ul>
- {% endif %}
+ {% endfor %}
 {% endfor %}
