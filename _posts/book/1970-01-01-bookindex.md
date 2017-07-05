@@ -1,6 +1,7 @@
 ---
 istop: true
 layout: post
+book: true
 category: book
 title: liberxue读过书|在读的书
 keywords: 书籍,book,linberxue,目录

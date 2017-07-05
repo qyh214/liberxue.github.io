@@ -1,6 +1,7 @@
 ---
 istop: true
 layout: post
+book: true
 title:  "毛姆《寻欢作乐》（百读文库）liberxue一些所感所想和笔记书签"
 date:   2017-06-27 23:43:54
 category: book

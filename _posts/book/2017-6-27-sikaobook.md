@@ -1,6 +1,7 @@
 ---
 istop: true
 layout: post
+book: true
 title:  "思考,快与慢"
 date:   2017-06-27
 category: book
