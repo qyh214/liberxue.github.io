@@ -2,7 +2,7 @@
 layout: post
 title: "微信开发调试阶段浏览器缓存"
 date: 2017-01-22
-ascription: study
+category: wechart
 excerpt: "摘要: 解决方案是在调试阶段或者频繁更新的页面加入以下头信息 ，防止页面被缓存的方法，在URL后面添加随机参数，这样每次访问的都是不同的连接 "
 keywords: 
 - 微信
