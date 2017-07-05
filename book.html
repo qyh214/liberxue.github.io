@@ -1,0 +1,16 @@
+---
+layout: post
+category: Info
+title: book
+date: 1970-01-01 00:00:00.000000000 +00:00
+tags: liberxue, info
+keywords: liberxue, liberxueblog,
+excerpt: 博客时间线
+---
+
+{% for category in site.categories %}
+    <li>{{category[0]}}({{category | last | size}})</li>
+        {% for post in category[1] %}
+        <p><a href="{{post.url}}">{{post.title}}</a></p>
+        {% endfor %}
+    {% endfor %}
