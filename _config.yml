@@ -25,8 +25,8 @@ blog_button:
 nav:
     - {title: 目录,        in_site: true,  description: 博客目录,               url: '/timeline'}
     - {title: 关于,        in_site: true,  description: 关于作者 liberxue,       url: '/info/about'}
-    - {title: 看过的书,     in_site: true,  description: liberxue 书,    url: '/book/bookindex'}
-    - {title: 走过的路,        in_site: true,  description: 关于作者 liberxue,       url: '/info/about'}
+    - {title: 看过的书,     in_site: true,  description: liberxue 书,    url: '/book'}
+    - {title: 走过的路,        in_site: true,  description: 关于作者 liberxue,       url: '/road'}
     
 
 
