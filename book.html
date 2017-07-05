@@ -8,26 +8,11 @@ keywords: liberxue, liberxueblog,
 excerpt: 博客时间线
 ---
 
-
-<div class="main-post-list hidden">
-  <ol class="post-list">
-    <!--置顶-->
-    {% for post in site.posts %}
-      {% if post.category.book %}
-        {% if paginator.page == 1 %}
-        <li><i class="circle"></i> 
-          <h2 class="post-list__post-title post-title"><a href="{{ post.url }}"  data-hover="{{ post.title }}" title="访问 {{ post.title }}">[置顶]{{ post.title }}</a></h2>
-          <i class="arrowl"></i>
-          <p class="excerpt">{{ post.content | strip_html | strip_newlines | truncate: 260 }}&hellip;</p>
-          <span class="post-list__meta"><a href="{{ post.url }}"  data-hover=" 关键字：{{ post.keywords }}" title="访问 {{ post.keywords }}">关键字：{{ post.keywords }}</a></span>
-          <div class="post-list__meta"><time datetime="{{post.date | date: date_to_xmlschema}}" class="post-list__meta--date date">{{ post.date | date: "%F"}}</time> &#8226; <span class="post-list__meta--tags tags">{{ post.category }}</span> <a class="btn-border-small" data-hover="阅读全文" href={{ post.url }}>阅读全文</a></div>
-          <hr class="post-list__divider" />
-        </li>
-        {% endif %}
-      {% endif %}
+<h4>Category</h4>
+<ul>
+    {% for category in site.categories %}
+    <li><a href="/categories/{{ category | first }}/" title="view all
+posts">{{ category | first }} {{ category | last | size }}</a>
+    </li>
     {% endfor %}
-  </ol>
-
-  {% include pagination.html %}
-
-</div>
+</ul>
