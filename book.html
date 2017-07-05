@@ -8,9 +8,11 @@ keywords: liberxue, liberxueblog,
 excerpt: 博客时间线
 ---
 
-{% for category in site.categories %}
-    <li>{{category.book]}}({{category | last | size}})</li>
-        {% if post in category.book%}
-        <p><a href="{{post.url}}">{{post.title}}</a></p>
-        {% endif %}
-    {% endif %}
+    {% for post in site.posts %}
+      {% if post.category.book %}
+        <li>
+          <h1 class="time-line-title"><a href="{{ post.url }}" data-hover="[置顶]{{ post.title }}" title="访问 {{ post.title }}">[置顶]{{ post.title }}</a></h1>
+          <div class="time-line-mate"><time datetime="{{post.date | date: date_to_xmlschema}}" class="post-list__meta--date date">{{ post.date | date: "%F"}}</time> &#8226; <span class="post-list__meta--tags tags">{{ post.category }}</span> </div>
+        </li>
+      {% endif %}
+    {% endfor %}
