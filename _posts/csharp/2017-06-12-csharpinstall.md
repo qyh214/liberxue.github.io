@@ -20,7 +20,7 @@ keywords: c#,打包安装,debug打包,winfrom, c++,zip
 ```
 * 注释下：解压和压缩类都是采用我的我GitHub公开的无dll类 毕竟谁也下载一个软件带一个dll解压类看起来多难受。。。怪怪得哈。
 先上个图：
-![install](/upload-img/install.gif)
+![install](http://ospsx22m9.bkt.clouddn.com/install.gif)
 ### 解压释放
 ```
  lblDoing.Text = "正在释放运行组建 . . .";
