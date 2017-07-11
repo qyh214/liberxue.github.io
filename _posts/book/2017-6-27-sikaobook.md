@@ -1,5 +1,4 @@
 ---
-istop: true
 layout: post
 book: true
 title:  "思考,快与慢"
